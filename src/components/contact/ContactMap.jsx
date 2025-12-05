@@ -4,7 +4,7 @@ export default function ContactMap() {
       <div className="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
         <div className="p-0">
           <img
-            src="/mapa-ubicacion-oficina-ciudad.jpg"
+            src="/ubi.jpg"
             alt="Ubicación"
             className="w-full h-64 object-cover"
           />

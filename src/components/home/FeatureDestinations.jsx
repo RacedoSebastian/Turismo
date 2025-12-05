@@ -1,4 +1,5 @@
 import { TrendingUp, MapPin, Star, Calendar, ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function FeaturedDestinations() {
   const featuredDestinations = [
@@ -104,10 +105,10 @@ export default function FeaturedDestinations() {
         ))}
       </div>
 
-      <button className="w-full mt-6 gap-2 bg-orange-500 hover:bg-orange-600 h-14 font-bold text-base text-white rounded-md flex items-center justify-center">
+      <Link to="/trips" className="w-full mt-6 gap-2 bg-orange-500 hover:bg-orange-600 h-14 font-bold text-base text-white rounded-md flex items-center justify-center">
         Ver Todos los Destinos
         <ArrowRight className="h-5 w-5" />
-      </button>
+      </Link>
     </div>
   );
 }

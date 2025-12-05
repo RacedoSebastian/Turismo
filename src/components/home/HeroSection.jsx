@@ -1,4 +1,5 @@
 import { Sparkles, ArrowRight, Tag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function HeroSection() {
   return (
@@ -28,14 +29,15 @@ export default function HeroSection() {
 
         {/* Botones en columna, grandes */}
         <div className="flex flex-col gap-3 w-full max-w-sm">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg h-14 shadow-2xl rounded-md flex items-center justify-center gap-2">
+          <Link to="/trips" className="bg-orange-500 hover:bg-orange-600 text-white font-bold text-lg h-14 shadow-2xl rounded-md flex items-center justify-center gap-2">
             Explorar Destinos
             <ArrowRight className="h-5 w-5" />
-          </button>
-          <button className="border-2 border-white text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm font-semibold h-14 rounded-md flex items-center justify-center gap-2">
+          </Link>
+          
+          <Link to="/offer" className="border-2 border-white text-white hover:bg-white/20 bg-white/10 backdrop-blur-sm font-semibold h-14 rounded-md flex items-center justify-center gap-2">
             Ver Ofertas
             <Tag className="h-5 w-5" />
-          </button>
+          </Link>
         </div>
       </div>
 
